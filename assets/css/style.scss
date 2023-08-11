@@ -7,10 +7,10 @@
     --primary-dark: #0d47a1;
     --primary-light: #64b5f6;
     --secondary: #ff4081;
-    --secondary-dark: #c51162;
+    --secondary-dark: #a71155;
     --secondary-light: #ff80ab;
     --tertiary: #ff6f00;
-    --tertiary-dark: #e65100;
+    --tertiary-dark: #993300;
     --tertiary-light: #ffab40;
     --grey: #bdbdbd;
     --grey-dark: #757575;
@@ -19,13 +19,13 @@
     --black-dark: #000;
     --black-light: #484848;
     --success: #4caf50;
-    --success-dark: #087f23;
+    --success-dark: #08631a;
     --success-light: #80e27e;
     --warning: #ffeb3b;
-    --warning-dark: #f57f17;
+    --warning-dark: #874508;
     --warning-light: #fff176;
     --danger: #f44336;
-    --danger-dark: #b71c1c;
+    --danger-dark: #a91919;
     --danger-light: #ef5350;
     --info: #2196f3;
     --info-dark: #01579b;
@@ -146,16 +146,16 @@ h1, h2, h3 {
     ========================================================================== */
 
 .nav_bg {
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
 }
 
 .active {
-    background-color: var(--primary-dark);
+    background-color: var(--primary);
     transition: all 0.3s ease-in-out;
 }
 
 .nav_primary {
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
     color: var(--white);
     display: flex;
     justify-content: space-between;
@@ -305,7 +305,6 @@ fieldset legend {
         font-size: 2rem;
         color: var(--black);
         transition: all 0.3s ease-in-out;
-
         &:focus {
             border-color: var(--info);
             outline: 0;
@@ -529,20 +528,20 @@ fieldset legend {
 }
 
 .btn_primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
     &:hover {
-        background-color: var(--primary-dark);
-        border-color: var(--primary-dark);
+        background-color: var(--primary);
+        border-color: var(--primary);
     }
 }
 
 .btn_secondary {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+    background-color: var(--secondary-dark);
+    border-color: var(--secondary-dark);
     &:hover {
-        background-color: var(--secondary-dark);
-        border-color: var(--secondary-dark);
+        background-color: var(--secondary);
+        border-color: var(--secondary);
     }
 }
 

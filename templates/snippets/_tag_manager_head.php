@@ -1,5 +1,5 @@
 <!-- Google Tag Manager -->
-<script>
+<script nonce="<?php echo $random ?>">
     (function(w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({

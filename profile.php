@@ -1,6 +1,11 @@
 <?php
 session_start();
 $_SESSION['page'] = 'profile';
+$random = 0;
+try {
+    $random = substr(hash('sha256', openssl_random_pseudo_bytes(20)),-random_int(1, 100));
+} catch (Exception $e) {
+}
 $works = [
     [
         "title" => "Java Software Engineer",
@@ -186,6 +191,8 @@ $soft_skills = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-<?php echo $random ?>' 'strict-dynamic'">
+    <meta name="description" content="My name is Arturo López, I am a full-stack developer with experience in the travel, consulting, recruiting, and human resources industries.">
     <title>Arturo López | Web Developer | Profile</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
@@ -323,8 +330,8 @@ $soft_skills = [
 
     <?php include(__DIR__ . '/templates/section/_footer.php') ?>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/main.min.js" type="application/javascript"></script>
+    <script nonce="<?php echo $random ?>" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script nonce="<?php echo $random ?>" src="assets/js/main.min.js" type="application/javascript"></script>
     <?php include(__DIR__ . '/templates/snippets/_form_microformats.php') ?>
 </body>
 
