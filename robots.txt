@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://lgzarturo.com/sitemap.xml
+Sitemap: https://lgzarturo.com/sitemap.xml
