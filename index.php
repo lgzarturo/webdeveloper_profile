@@ -57,7 +57,7 @@
     <div class="background_section">
         <div class="overlay"></div>
         <section id="about" class="container rounded card py_5">
-            <h2 class="bb mt_0">
+            <h2 class="mt_0">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
                 </svg>
@@ -75,7 +75,7 @@
                 </svg>
                 Cancún, Quintana Roo
             </p>
-            <a href="#contact">
+            <a href="#contact" class="btn btn_secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
@@ -212,6 +212,60 @@
         </p>
         <p>&copy; 2020 - All rights reserved</p>
     </footer>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Arturo López",
+            "url": "https://lgzarturo.com",
+            "image": "https://avatars.githubusercontent.com/u/128883?v=4",
+            "jobTitle": "Java Web Developer",
+            "email": "lgzarturo@gmail.com",
+            "telephone": "9982229740",
+            "sameAs": [
+                "https://www.facebook.com/lgzarturo/",
+                "https://twitter.com/lgzarturo",
+                "https://www.instagram.com/lgzarturo",
+                "https://www.linkedin.com/in/lgzarturo/",
+                "https://github.com/lgzarturo"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "lgzarturo professional profile",
+            "url": "https://lgzarturo.com"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Arturo López Gómez",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Residencial Alejandría",
+                "addressLocality": "Cancún",
+                "postalCode": "77519",
+                "addressRegion": "Quintana Roo ",
+                "addressCountry": "MX"
+            },
+            "telephone": "9982229740",
+            "url": "https://lgzarturo.com",
+            "priceRange": "$$-$$$",
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Sunday", "Saturday"],
+                "opens": "09:00",
+                "closes": "21:00"
+            }],
+            "image": [
+                "https://raw.githubusercontent.com/lgzarturo/lgzarturo/master/assets/github-header.jpg"
+            ]
+        }
+    </script>
 </body>
 
 </html>
