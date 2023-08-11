@@ -95,13 +95,13 @@
         <p>
             Or you can send me an message to the following contact form:
         </p>
-        <form action="" method="POST">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your name" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Your email" required>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+        <form action="mailto:lgzarturo@gmail.com?subject=Contact from my website" method="GET" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required><br>
+            <label for="body">Message:</label><br>
+            <textarea name="body" id="body" cols="30" rows="10" placeholder="Your message" required></textarea>
             <p>
                 Please, fill all the fields.
             </p>
