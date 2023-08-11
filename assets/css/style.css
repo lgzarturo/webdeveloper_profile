@@ -83,6 +83,10 @@ h1 span {
   text-decoration: underline;
 }
 
+.pb_5 {
+  padding-bottom: 5rem;
+}
+
 .py_0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -91,6 +95,11 @@ h1 span {
 .py_1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py_5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .px_0 {
@@ -108,10 +117,96 @@ h1 span {
   margin-bottom: 1rem;
 }
 
+.mt_0 {
+  margin-top: 0;
+}
+
 .mt_2 {
   margin-top: 2rem;
 }
 
+.mb_3 {
+  margin-bottom: 3rem;
+}
+
 .bt {
   border-top: 1px solid var(--grey-light);
+}
+
+.bb {
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.form_input label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form_input input, .form_input textarea {
+  padding: 1rem .5rem;
+  border: 1px solid var(--grey-light);
+  border-radius: 0.5rem;
+}
+
+.background_section {
+  background-color: var(--grey-light);
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/hero.jpg');
+  background-blend-mode: overlay;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 2em;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn_primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn_primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .nav_primary {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1139px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1140px) and (max-width: 1399px) {
+}
+
+@media (min-width: 1400px) {
 }
