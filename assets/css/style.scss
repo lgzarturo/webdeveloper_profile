@@ -1,0 +1,466 @@
+/*
+    Theme variables of colors
+    ========================================================================== */
+
+:root {
+    --primary: #1e88e5;
+    --primary-dark: #0d47a1;
+    --primary-light: #64b5f6;
+    --secondary: #ff4081;
+    --secondary-dark: #c51162;
+    --secondary-light: #ff80ab;
+    --tertiary: #ff6f00;
+    --tertiary-dark: #e65100;
+    --tertiary-light: #ffab40;
+    --grey: #bdbdbd;
+    --grey-dark: #757575;
+    --grey-light: #e0e0e0;
+    --black: #212121;
+    --black-dark: #000;
+    --black-light: #484848;
+    --success: #4caf50;
+    --success-dark: #087f23;
+    --success-light: #80e27e;
+    --warning: #ffeb3b;
+    --warning-dark: #f57f17;
+    --warning-light: #fff176;
+    --danger: #f44336;
+    --danger-dark: #b71c1c;
+    --danger-light: #ef5350;
+    --info: #2196f3;
+    --info-dark: #01579b;
+    --info-light: #64b5f6;
+    --white: #fff;
+    --white-dark: #e0e0e0;
+}
+
+/*
+    General styles
+    ========================================================================== */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+/*
+    Text styles
+    ========================================================================== */
+
+h1 {
+    font-size: 3.8rem;
+
+    span {
+        font-weight: 300;
+    }
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/*
+    Layout settings
+    ========================================================================== */
+
+.container {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.text_center {
+    text-align: center;
+}
+
+/*
+    Navigation and menu items
+    ========================================================================== */
+
+.nav_bg {
+    background-color: var(--primary);
+}
+
+.active {
+    background-color: var(--primary-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_primary {
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    a {
+        font-weight: bold;
+        color: var(--white);
+        text-decoration: none;
+        &:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+    }
+}
+
+/*
+    Spacing settings
+    ========================================================================== */
+
+.pb_5 {
+    padding-bottom: 5rem;
+}
+
+.py_0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.py_1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py_5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.px_0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.px_1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px_2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.my_1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mt_0 {
+    margin-top: 0;
+}
+
+.mt_2 {
+    margin-top: 2rem;
+}
+
+.mb_3 {
+    margin-bottom: 3rem;
+}
+
+.mb_4 {
+    margin-bottom: 4rem;
+}
+
+.w_100 {
+    display: block;
+    width: 100%;
+}
+
+/*
+    Border options
+    ========================================================================== */
+
+.bt {
+    border-top: 1px solid var(--grey-light);
+}
+
+.bb {
+    border-bottom: 1px solid var(--grey-light);
+}
+
+.rounded {
+    border-radius: 1rem;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+    Form elements
+    ========================================================================== */
+
+fieldset {
+    padding: 2rem;
+    border: 1px solid var(--grey-light);
+    margin-top: 3rem;
+}
+
+fieldset legend {
+    padding: 0 1rem;
+}
+
+.form_input label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form_input {
+    input, textarea {
+        padding: 1rem 1.5rem;
+        border: 1px solid var(--grey-light);
+        border-radius: 0.5rem;
+        width: 100%;
+        font-size: 2rem;
+        color: var(--black);
+        transition: all 0.3s ease-in-out;
+
+        &:focus {
+            border-color: var(--info);
+            outline: 0;
+            box-shadow: 0 0 0 0.35rem rgba(106, 106, 106, 0.25);
+        }
+    }
+}
+
+/*
+    Custom elements
+    ========================================================================== */
+
+.background_section {
+    background-color: var(--grey-light);
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/hero.jpg');
+    position: relative;
+    padding: 5rem 0;
+    .overlay {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+    }
+    section {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.card_column {
+    flex-direction: column !important;
+}
+
+.card_row {
+    flex-direction: row !important;
+}
+
+.card_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 2em;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card_item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0;
+    width: calc(96% / 3);
+    margin-right: 2rem;
+    margin-top: 2rem;
+    flex-grow: 1;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    h4 {
+        margin: 0;
+        padding: 2rem 0;
+    }
+    h4, img {
+        align-self: flex-start;
+    }
+    p {
+        margin: 2rem;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn_primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    &:hover {
+        background-color: var(--primary-dark);
+        border-color: var(--primary-dark);
+    }
+}
+
+.btn_secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    &:hover {
+        background-color: var(--secondary-dark);
+        border-color: var(--secondary-dark);
+    }
+}
+
+.btn_flat_top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/*
+    Icons
+    ========================================================================== */
+
+.social_icons {
+    display: flex;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        background-color: var(--grey);
+        border-radius: 1rem;
+        svg {
+            color: var(--white);
+            width: 4rem;
+            height: 4rem;
+            margin: 1rem 6rem;
+        }
+        &:hover {
+            background-color: var(--grey-dark);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+svg {
+    height: 1.5em;
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+/*
+    Responsive customizations
+    ========================================================================== */
+
+@media (min-width: 320px) and (max-width: 767px) {
+    /* Mobile settings */
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .card {
+        padding: 1.5em;
+    }
+    .card_item {
+        padding: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .nav_primary {
+        flex-direction: column;
+        align-items: center;
+        a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .social_icons {
+        flex-direction: column;
+        align-items: center;
+        a {
+            width: 100%;
+            text-align: center;
+            margin: 1rem;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1139px) {
+    /* Tablet settings */
+    .container {
+        width: 100%;
+    }
+    .card_item {
+        width: calc(95% / 2);
+    }
+}
+
+@media (min-width: 1140px) and (max-width: 1399px) {
+    /* Laptop settings */
+}
+
+@media (min-width: 1400px) {
+    /* Desktop settings */
+}

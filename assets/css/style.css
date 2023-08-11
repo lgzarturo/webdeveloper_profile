@@ -1,3 +1,6 @@
+/*
+    Theme variables of colors
+    ========================================================================== */
 :root {
   --primary: #1e88e5;
   --primary-dark: #0d47a1;
@@ -30,6 +33,9 @@
   --white-dark: #e0e0e0;
 }
 
+/*
+    General styles
+    ========================================================================== */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -40,25 +46,21 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.6;
   color: var(--black);
   background-color: var(--white);
 }
 
-svg {
-  height: 1.5em;
-  width: 1.5em;
-  vertical-align: middle;
-}
-
-h1 span {
-  font-weight: 300;
-}
-
+/*
+    Text styles
+    ========================================================================== */
 h1 {
   font-size: 3.8rem;
+}
+h1 span {
+  font-weight: 300;
 }
 
 h2 {
@@ -92,6 +94,9 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+/*
+    Layout settings
+    ========================================================================== */
 .container {
   width: 120rem;
   margin: 0 auto;
@@ -101,8 +106,16 @@ h1, h2, h3 {
   text-align: center;
 }
 
+/*
+    Navigation and menu items
+    ========================================================================== */
 .nav_bg {
   background-color: var(--primary);
+}
+
+.active {
+  background-color: var(--primary-dark);
+  transition: all 0.3s ease-in-out;
 }
 
 .nav_primary {
@@ -111,18 +124,19 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
 }
-
 .nav_primary a {
   font-weight: bold;
   color: var(--white);
   text-decoration: none;
 }
-
 .nav_primary a:hover {
   color: var(--white);
   text-decoration: underline;
 }
 
+/*
+    Spacing settings
+    ========================================================================== */
 .pb_5 {
   padding-bottom: 5rem;
 }
@@ -152,6 +166,11 @@ h1, h2, h3 {
   padding-right: 1rem;
 }
 
+.px_2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .my_1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -169,6 +188,18 @@ h1, h2, h3 {
   margin-bottom: 3rem;
 }
 
+.mb_4 {
+  margin-bottom: 4rem;
+}
+
+.w_100 {
+  display: block;
+  width: 100%;
+}
+
+/*
+    Border options
+    ========================================================================== */
 .bt {
   border-top: 1px solid var(--grey-light);
 }
@@ -177,18 +208,56 @@ h1, h2, h3 {
   border-bottom: 1px solid var(--grey-light);
 }
 
+.rounded {
+  border-radius: 1rem;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+    Form elements
+    ========================================================================== */
+fieldset {
+  padding: 2rem;
+  border: 1px solid var(--grey-light);
+  margin-top: 3rem;
+}
+
+fieldset legend {
+  padding: 0 1rem;
+}
+
 .form_input label {
   display: block;
   margin-bottom: 0.5rem;
 }
 
 .form_input input, .form_input textarea {
-  padding: 1rem .5rem;
+  padding: 1rem 1.5rem;
   border: 1px solid var(--grey-light);
   border-radius: 0.5rem;
   width: 100%;
+  font-size: 2rem;
+  color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+.form_input input:focus, .form_input textarea:focus {
+  border-color: var(--info);
+  outline: 0;
+  box-shadow: 0 0 0 0.35rem rgba(106, 106, 106, 0.25);
 }
 
+/*
+    Custom elements
+    ========================================================================== */
 .background_section {
   background-color: var(--grey-light);
   position: relative;
@@ -196,23 +265,36 @@ h1, h2, h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../img/hero.jpg');
+  background-image: url("../img/hero.jpg");
   position: relative;
   padding: 5rem 0;
 }
-
 .background_section .overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   top: 0;
   z-index: 1;
 }
-
 .background_section section {
   position: relative;
   z-index: 2;
+}
+
+.card_column {
+  flex-direction: column !important;
+}
+
+.card_row {
+  flex-direction: row !important;
+}
+
+.card_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .card {
@@ -220,13 +302,34 @@ h1, h2, h3 {
   padding: 2em;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.rounded {
-  border-radius: 1rem;
+.card_item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0;
+  width: 32%;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  flex-grow: 1;
+}
+.card_item:nth-child(3n) {
+  margin-right: 0;
+}
+.card_item h4 {
+  margin: 0;
+  padding: 2rem 0;
+}
+.card_item h4, .card_item img {
+  align-self: flex-start;
+}
+.card_item p {
+  margin: 2rem;
 }
 
 .btn {
@@ -244,7 +347,6 @@ h1, h2, h3 {
   background-color: var(--primary);
   border-color: var(--primary);
 }
-
 .btn_primary:hover {
   background-color: var(--primary-dark);
   border-color: var(--primary-dark);
@@ -254,13 +356,50 @@ h1, h2, h3 {
   background-color: var(--secondary);
   border-color: var(--secondary);
 }
-
 .btn_secondary:hover {
   background-color: var(--secondary-dark);
   border-color: var(--secondary-dark);
 }
 
+.btn_flat_top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*
+    Icons
+    ========================================================================== */
+.social_icons {
+  display: flex;
+  justify-content: space-between;
+}
+.social_icons a {
+  text-decoration: none;
+  background-color: var(--grey);
+  border-radius: 1rem;
+}
+.social_icons a svg {
+  color: var(--white);
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem 6rem;
+}
+.social_icons a:hover {
+  background-color: var(--grey-dark);
+  transition: all 0.3s ease-in-out;
+}
+
+svg {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+}
+
+/*
+    Responsive customizations
+    ========================================================================== */
 @media (min-width: 320px) and (max-width: 767px) {
+  /* Mobile settings */
   .container {
     width: 100%;
     padding: 0 1rem;
@@ -268,20 +407,44 @@ h1, h2, h3 {
   .card {
     padding: 1.5em;
   }
+  .card_item {
+    padding: 0;
+    margin-right: 0;
+    width: 100%;
+  }
   .nav_primary {
     flex-direction: column;
     align-items: center;
   }
+  .nav_primary a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .social_icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social_icons a {
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+  }
 }
-
 @media (min-width: 768px) and (max-width: 1139px) {
+  /* Tablet settings */
   .container {
     width: 100%;
   }
+  .card_item {
+    width: 47.5%;
+  }
 }
-
 @media (min-width: 1140px) and (max-width: 1399px) {
+  /* Laptop settings */
+}
+@media (min-width: 1400px) {
+  /* Desktop settings */
 }
 
-@media (min-width: 1400px) {
-}
+/*# sourceMappingURL=style.css.map */

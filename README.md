@@ -56,7 +56,7 @@ I am a web developer with experience in the development of web applications, I h
 
 ## Education
 
-- [**ITCancun**](https://itcancun.edu.mx) - _Bachelor of Computer Systems Engineering_ - (2000-2005) - Cancun, Mexico
+- [**ITCancun**](https://itcancun.edu.mx) - _Bachelor of Computer Systems Engineering_ - (2000-2005) - Cancún, Mexico
 
 ## Contact me
 
@@ -65,3 +65,9 @@ I am a web developer with experience in the development of web applications, I h
 - [Twitter](https://twitter.com/lgzarturo)
 - [Instagram](https://www.instagram.com/lgzarturo/)
 - [Facebook](https://www.facebook.com/lgzarturo/)
+
+## References
+
+- [Schema Markup JSON-LD Generators](https://www.seocomponent.com/schema-markup-generator/)
+- [Schema Reference](https://schema.org/)
+- [Hero Icons](https://heroicons.com)

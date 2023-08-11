@@ -46,21 +46,18 @@
     </header>
 
     <div class="nav_bg">
-        <nav class="nav_primary container py_1">
-            <a href="/" class="px_1">Home</a>
-            <a href="#about" class="px_1">About</a>
-            <a href="#services" class="px_1">Services</a>
-            <a href="#contact" class="px_1">Contact</a>
+        <nav class="nav_primary container">
+            <a href="/" class="py_1 px_2 active">Home</a>
+            <a href="#about" class="py_1 px_2">About</a>
+            <a href="#services" class="py_1 px_2">Services</a>
+            <a href="#contact" class="py_1 px_2">Contact</a>
         </nav>
     </div>
 
     <div class="background_section">
         <div class="overlay"></div>
-        <section id="about" class="container rounded card py_5">
+        <section id="about" class="container rounded card card_column py_5">
             <h2 class="mt_0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-                </svg>
                 Web development of web applications
             </h2>
             <p>
@@ -85,187 +82,100 @@
     </div>
 
     <main id="services" class="container py_5">
-        <h3 class="bb">
+        <h3 class="bb mb_4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
             </svg>
             Services
         </h3>
-        <section>
-            <h4>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-                </svg>
-                Web Applications
-            </h4>
-            <p>
-                I develop web applications with the latest technologies, I have experience in the development of web applications
-                with PHP, Laravel, Javascript, VueJS, ReactJS, NodeJS, MySQL, MongoDB, PostgreSQL, HTML5, CSS3, Bootstrap, among others.
-            </p>
-            <p>
-                I have experience in the development of web applications for different industries such as: real estate, restaurants,
-                hotels, travel agencies, among others.
-            </p>
-        </section>
-        <section>
-            <h4>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                </svg>
-                Mobile Applications
-            </h4>
-            <p>
-                I develop mobile applications with the latest technologies, I have experience in the development of mobile applications
-                with React Native, Android Studio, Java, Kotlin, Swift, among others.
-            </p>
-            <p>
-                Mobile applications are a very important part of any business, since it allows you to reach more customers, I have experience
-                in the development of mobile applications for Android and iOS.
-            </p>
-        </section>
-        <section>
-            <h4>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
-                </svg>
-                E-commerce
-            </h4>
-            <p>
-                I develop e-commerce with the latest technologies, I have experience in the development email marketing campaigns with
-                Mailchimp, Sendgrid, among others.
-            </p>
-            <p>
-                E-commerce is a very important part of any business, since it allows you to sell your products or services online, i have
-                experience with the most popular payment gateways like PayPal, Stripe, Conekta, MercadoPago, among others.
-            </p>
-        </section>
+        <div class="flex">
+            <div class="card_flex">
+                <section class="card card_item rounded">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                        </svg>
+                        Web Applications
+                    </h4>
+                    <img src="assets/img/web_applications_card.jpg" class="responsive" alt="Build and Develop Web Applications">
+                    <p>
+                        I develop web applications with the latest technologies,
+                        I have experience in the development of web applications
+                        with PHP, Laravel, Javascript, VueJS, ReactJS,
+                        NodeJS, MySQL, MongoDB,
+                        PostgreSQL, HTML5, CSS3, Bootstrap, among others.
+                    </p>
+                    <p>
+                        I have experience in the development of web applications for different industries such as real estate,
+                        restaurants, hotels, travel agencies, among others.
+                    </p>
+                    <a href="#" class="btn btn_secondary btn_flat_top text_center w_100 coming_soon">
+                        See more about web applications
+                    </a>
+                </section>
+                <section class="card card_item rounded">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                        Mobile Applications
+                    </h4>
+                    <img src="assets/img/mobile_applications_card.jpg" class="responsive" alt="Design and Responsive Thinking in Mobile First">
+                    <p>
+                        I develop mobile applications with the latest technologies,
+                        I have experience in the development of mobile applications
+                        with React Native, Android Studio, Java, Kotlin, Swift, among others.
+                    </p>
+                    <p>
+                        Mobile applications are a very important part of any business;
+                        Since it allows you to reach more customers, I have experience
+                        in the development of mobile applications for Android and iOS.
+                    </p>
+                    <a href="#" class="btn btn_secondary btn_flat_top text_center w_100 coming_soon">
+                        See more about mobile applications
+                    </a>
+                </section>
+                <section class="card card_item rounded">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                        </svg>
+                        E-commerce
+                    </h4>
+                    <img src="assets/img/ecommerce_card.jpg" class="responsive" alt="Payment methods, Customer Strategy of E-Commerce">
+                    <p>
+                        I develop e-commerce with the latest technologies,
+                        I have experience in the development of email marketing campaigns with
+                        Mailchimp, Sendgrid, among others.
+                    </p>
+                    <p>
+                        E-commerce is a very important part of any business,
+                        since it allows you to sell your products or services online, I have
+                        experience with the most popular payment gateways like PayPal,
+                        Stripe, Conekta, MercadoPago, among others.
+                    </p>
+                    <a href="#" class="btn btn_secondary btn_flat_top text_center w_100 coming_soon">
+                        See more about e-commerce
+                    </a>
+                </section>
+            </div>
+        </div>
     </main>
 
-    <section id="contact" class="container pb_5">
-        <h3 class="bb">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-            </svg>
-            Contact
-        </h3>
-        <p>
-            If you are interested in my services, you can contact me through the following means:
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/lgzarturo/" target="_blank">LinkedIn</a>
-            <a href="https://www.facebook.com/lgzarturo/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/lgzarturo/" target="_blank">Instagram</a>
-            <a href="https://twitter.com/lgzarturo" target="_blank">Twitter</a>
-            <a href="https://github.com/lgzarturo" target="_blank">GitHub</a>
-        </p>
-        <p>
-            Or you can send me an message to the following contact form:
-        </p>
-        <form action="mailto:lgzarturo@gmail.com?subject=Contact from my website" method="GET" enctype="text/plain">
-            <fieldset>
-                <legend>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                    </svg>
-                    Contact form, send me a message and I will contact you as soon as possible
-                </legend>
+    <?php include(__DIR__ . '/templates/section/_contact.php') ?>
 
-                <div class="form_input mb_3">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Your name" required>
-                </div>
+    <?php include(__DIR__ . '/templates/section/_footer.php') ?>
 
-                <div class="form_input mb_3">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Your phone" required>
-                </div>
-
-                <div class="form_input mb_3">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Your email" required>
-                </div>
-
-                <div class="form_input mb_3">
-                    <label for="body">Message:</label>
-                    <textarea name="body" id="body" cols="30" rows="10" placeholder="Your message" required></textarea>
-                </div>
-
-                <p>
-                    Please, fill all the fields.
-                </p>
-                <button type="submit" class="btn btn_primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                    </svg>
-                    Send message
-                </button>
-            </fieldset>
-        </form>
-    </section>
-
-    <footer class="container bt my_1 mt_2 text_center">
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-            </svg>
-            Arturo López - Web Developer
-        </p>
-        <p>&copy; 2020 - All rights reserved</p>
-    </footer>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "Person",
-            "name": "Arturo López",
-            "url": "https://lgzarturo.com",
-            "image": "https://avatars.githubusercontent.com/u/128883?v=4",
-            "jobTitle": "Java Web Developer",
-            "email": "lgzarturo@gmail.com",
-            "telephone": "9982229740",
-            "sameAs": [
-                "https://www.facebook.com/lgzarturo/",
-                "https://twitter.com/lgzarturo",
-                "https://www.instagram.com/lgzarturo",
-                "https://www.linkedin.com/in/lgzarturo/",
-                "https://github.com/lgzarturo"
-            ]
-        }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            $('.coming_soon').click(function(e) {
+                e.preventDefault();
+                alert('This section is coming soon');
+            });
+        });
     </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "lgzarturo professional profile",
-            "url": "https://lgzarturo.com"
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "Arturo López Gómez",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Residencial Alejandría",
-                "addressLocality": "Cancún",
-                "postalCode": "77519",
-                "addressRegion": "Quintana Roo ",
-                "addressCountry": "MX"
-            },
-            "telephone": "9982229740",
-            "url": "https://lgzarturo.com",
-            "priceRange": "$$-$$$",
-            "openingHoursSpecification": [{
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Sunday", "Saturday"],
-                "opens": "09:00",
-                "closes": "21:00"
-            }],
-            "image": [
-                "https://raw.githubusercontent.com/lgzarturo/lgzarturo/master/assets/github-header.jpg"
-            ]
-        }
-    </script>
+    <script src="assets/js/schema.json" type="application/ld+json"></script>
 </body>
 
 </html>
