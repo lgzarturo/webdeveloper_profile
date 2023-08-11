@@ -150,7 +150,7 @@ $_SESSION['page'] = 'index';
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.min.js" type="application/javascript"></script>
-    <script src="assets/js/schema.json" type="application/ld+json"></script>
+    <?php include(__DIR__ . '/templates/snippets/_form_microformats.php') ?>
 </body>
 
 </html>
