@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+svg {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+}
