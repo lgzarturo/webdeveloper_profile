@@ -1,3 +1,35 @@
+:root {
+  --primary: #1e88e5;
+  --primary-dark: #0d47a1;
+  --primary-light: #64b5f6;
+  --secondary: #ff4081;
+  --secondary-dark: #c51162;
+  --secondary-light: #ff80ab;
+  --tertiary: #ff6f00;
+  --tertiary-dark: #e65100;
+  --tertiary-light: #ffab40;
+  --grey: #bdbdbd;
+  --grey-dark: #757575;
+  --grey-light: #e0e0e0;
+  --black: #212121;
+  --black-dark: #000;
+  --black-light: #484848;
+  --success: #4caf50;
+  --success-dark: #087f23;
+  --success-light: #80e27e;
+  --warning: #ffeb3b;
+  --warning-dark: #f57f17;
+  --warning-light: #fff176;
+  --danger: #f44336;
+  --danger-dark: #b71c1c;
+  --danger-light: #ef5350;
+  --info: #2196f3;
+  --info-dark: #01579b;
+  --info-light: #64b5f6;
+  --white: #fff;
+  --white-dark: #e0e0e0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -6,8 +38,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+  color: var(--black);
+  background-color: var(--white);
 }
 
 svg {
@@ -18,4 +50,68 @@ svg {
 
 h1 span {
   font-weight: 300;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.nav_bg {
+  background-color: var(--primary);
+}
+
+.nav_primary {
+  background-color: var(--primary);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_primary a {
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav_primary a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.py_0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.py_1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px_0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.px_1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.my_1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt_2 {
+  margin-top: 2rem;
+}
+
+.bt {
+  border-top: 1px solid var(--grey-light);
 }
