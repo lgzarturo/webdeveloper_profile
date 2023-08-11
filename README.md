@@ -8,11 +8,11 @@ I am a web developer with experience in the development of web applications, I h
 
 ## Work Experience
 
-- [**Revenatium**](https://revenatium.com) - _Java Developer_ - (2019-current) - Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, among others.
-- [**StarTalent**](https://startalent.mx) - _Grails Developer_ - (2018-2019) Web application for the management of recruitment processes.
-- [**Grupo Argos**](https://grupoargos.com.mx) - _Java Developer_ (2012-2019) - Web application for the management of payroll and human resources.
-- [**Sunset Group**](https://sunsetworld.net) - _Java Developer_ (2009-2012) - Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, among others.
-- **Freelance** - _Php Developer_ - (2005-2009) - Web design and development for clients.
+- [**Revenatium**](https://revenatium.com) - _Java Software Engineer_ - (2019-current) - Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, among others.
+- [**StarTalent**](https://startalent.mx) - _Software Engineer_ - (2018-2019) Web application for the management of recruitment processes.
+- [**Grupo Argos**](https://grupoargos.com.mx) - _Java Software Engineer / Marketing Manager_ (2012-2019) - Web application for the management of payroll and human resources.
+- [**Sunset Group**](https://sunsetworld.net) - _Java Developer / Webmaster_ (2009-2012) - Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, among others.
+- **Freelance** - _Php Developer / Technical Support_ - (2005-2009) - Web design and development for clients.
 
 ### Skills
 
@@ -71,3 +71,4 @@ I am a web developer with experience in the development of web applications, I h
 - [Schema Markup JSON-LD Generators](https://www.seocomponent.com/schema-markup-generator/)
 - [Schema Reference](https://schema.org/)
 - [Hero Icons](https://heroicons.com)
+- [Tabler Icons](https://tabler-icons.io)
