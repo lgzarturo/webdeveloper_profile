@@ -72,3 +72,6 @@ I am a web developer with experience in the development of web applications, I h
 - [Schema Reference](https://schema.org/)
 - [Hero Icons](https://heroicons.com)
 - [Tabler Icons](https://tabler-icons.io)
+- [Color Contrast Checker](https://dequeuniversity.com/rules/axe/4.7/color-contrast)
+- [Color Contrast Checker: WebAIM](https://webaim.org/resources/contrastchecker/)
+- [MetaTags Generator](https://metatags.io/)

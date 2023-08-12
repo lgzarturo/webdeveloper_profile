@@ -191,9 +191,11 @@ $soft_skills = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-<?php echo $random ?>' 'strict-dynamic'">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-<?php echo $random ?>' 'strict-dynamic' 'unsafe-inline' https:; object-src 'none'; base-uri 'none';">
     <meta name="description" content="My name is Arturo López, I am a full-stack developer with experience in the travel, consulting, recruiting, and human resources industries.">
-    <title>Arturo López | Web Developer | Profile</title>
+    <meta name="title" content="Arturo López - Web Developer | Professional Profile" />
+    <title>Arturo López | Web Developer | Professional Profile</title>
+    <?php include(__DIR__ . '/templates/snippets/_tag_open_graph.php') ?>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
