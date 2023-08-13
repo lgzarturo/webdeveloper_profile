@@ -151,9 +151,11 @@ $csrf_token = $_SESSION['csrf_token'] ?? '';
     <script>
         const is_production = '<?php echo $is_production ?>';
         const token = '<?php echo $random ?>';
+        const lang = '<?php echo $lang ?>';
         console.log({
             is_production,
-            token
+            token,
+            lang
         });
     </script>
     <?php include(__DIR__ . '/templates/snippets/_form_microformats.php') ?>

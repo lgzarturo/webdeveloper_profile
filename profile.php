@@ -62,7 +62,7 @@ $_SESSION['page'] = 'profile';
                     <?php foreach ($works as $obj) { ?>
                         <div class="experience_item">
                             <div class="title">
-                                <h4><?php echo $obj['title'] ?></h4>
+                                <h4><?php echo $obj['title_' . $lang] ?></h4>
                                 <a href="<?php echo $obj['company_url'] ?>" target="_blank">
                                     <?php echo $obj['company'] ?>
                                 </a>
@@ -75,7 +75,7 @@ $_SESSION['page'] = 'profile';
                             </div>
                             <div class="body mt_3">
                                 <p class="description">
-                                    <?php echo $obj['description'] ?>
+                                    <?php echo $obj['description_' . $lang] ?>
                                 </p>
 
                                 <div class="items technologies">
@@ -98,7 +98,7 @@ $_SESSION['page'] = 'profile';
                     <?php foreach ($education as $obj) { ?>
                         <div class="experience_item">
                             <div class="title">
-                                <h4><?php echo $obj['title'] ?></h4>
+                                <h4><?php echo $obj['title_' . $lang] ?></h4>
                                 <a href="<?php echo $obj['school_url'] ?>" target="_blank">
                                     <?php echo $obj['school'] ?>
                                 </a>
@@ -111,7 +111,7 @@ $_SESSION['page'] = 'profile';
                             </div>
                             <div class="body mt_3">
                                 <p class="description">
-                                    <?php echo $obj['description'] ?>
+                                    <?php echo $obj['description_' . $lang] ?>
                                 </p>
                             </div>
                         </div>
@@ -140,8 +140,8 @@ $_SESSION['page'] = 'profile';
                     <ul class="list_items">
                         <?php foreach ($soft_skills as $skill) { ?>
                             <li>
-                                <img src="assets/img/icons/<?php echo $skill['icon'] ?>" alt="<?php echo $skill['title'] ?>" class="icon">
-                                <?php echo $skill['title'] ?>
+                                <img src="assets/img/icons/<?php echo $skill['icon'] ?>" alt="<?php echo $skill['title_' . $lang] ?>" class="icon">
+                                <?php echo $skill['title_' . $lang] ?>
                             </li>
                         <?php } ?>
                     </ul>

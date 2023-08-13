@@ -119,12 +119,14 @@ $data_translations = [
 
 $works = [
     [
-        "title" => "Java Software Engineer",
+        "title_en" => "Java Software Engineer",
+        "title_es" => "Ingeniero de Software Java",
         "company" => "Revenatium",
         "company_url" => "https://revenatium.com",
         "location" => "Cancún, Quintana Roo",
-        "date" => "2019 - Present",
-        "description" => "Backend development of web applications with Java, Spring Boot. Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, among others.",
+        "date" => "2019 - " . date("Y"),
+        "description_en" => "Backend development of web applications with Java, Spring Boot. Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, among others.",
+        "description_es" => "Desarrollo backend de aplicaciones web con Java, Spring Boot. Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, entre otros.",
         "technologies" => [
             "Java",
             "Kotlin",
@@ -134,12 +136,14 @@ $works = [
         ],
     ],
     [
-        "title" => "Software Engineer",
+        "title_en" => "Software Engineer",
+        "title_es" => "Ingeniero de Software",
         "company" => "StarChoice",
         "company_url" => "https://starchoice.com.mx",
         "location" => "Cancún, Quintana Roo",
         "date" => "2018 - 2019",
-        "description" => "Full-stack development of web applications with Grails, jQuery, MySQL, HTML5, CSS3, Bootstrap. Web application for the management of recruitment processes.",
+        "description_en" => "Full-stack development of web applications with Grails, jQuery, MySQL, HTML5, CSS3, Bootstrap. Web application for the management of recruitment processes.",
+        "description_es" => "Desarrollo full-stack de aplicaciones web con Grails, jQuery, MySQL, HTML5, CSS3, Bootstrap. Aplicación web para la gestión de procesos de reclutamiento.",
         "technologies" => [
             "Grails",
             "Java",
@@ -150,12 +154,14 @@ $works = [
         ],
     ],
     [
-        "title" => "Marketing Manager",
+        "title_en" => "Marketing Manager",
+        "title_es" => "Gerente de Marketing",
         "company" => "Grupo Argos",
         "company_url" => "https://grupoargos.com.mx",
         "location" => "Cancún, Quintana Roo",
         "date" => "2016 - 2019",
-        "description" => "Development of corporate identity, web design, digital marketing, social media management, and SEO",
+        "description_en" => "Development of corporate identity, web design, digital marketing, social media management, and SEO",
+        "description_es" => "Desarrollo de identidad corporativa, diseño web, marketing digital, gestión de redes sociales y SEO",
         "technologies" => [
             "Adobe Photoshop",
             "Adobe Illustrator",
@@ -168,12 +174,14 @@ $works = [
         ],
     ],
     [
-        "title" => "Java Software Engineer",
+        "title_en" => "Java Software Engineer",
+        "title_es" => "Ingeniero de Software Java",
         "company" => "Grupo Argos",
         "company_url" => "https://grupoargos.com.mx",
         "location" => "Cancún, Quintana Roo",
         "date" => "2012 - 2016",
-        "description" => "Backend development of web applications with Java, Spring Framework, SQL Server, HTML5, CSS3, Bootstrap. Web application for the management of payroll and human resources.",
+        "description_en" => "Backend development of web applications with Java, Spring Framework, SQL Server, HTML5, CSS3, Bootstrap. Web application for the management of payroll and human resources.",
+        "description_es" => "Desarrollo backend de aplicaciones web con Java, Spring Framework, SQL Server, HTML5, CSS3, Bootstrap. Aplicación web para la gestión de nómina y recursos humanos.",
         "technologies" => [
             "Java",
             "Spring Framework",
@@ -184,12 +192,14 @@ $works = [
         ],
     ],
     [
-        "title" => "Java Developer / Webmaster",
+        "title_en" => "Java Developer / Webmaster",
+        "title_es" => "Desarrollador Java / Webmaster",
         "company" => "Sunset World Hotels & Resorts",
         "company_url" => "https://sunsetworldresorts.com",
         "location" => "Cancún, Quintana Roo",
         "date" => "2009 - 2012",
-        "description" => "Java desktop and web development with Java, Play Framework, Oracle, HTML5, CSS3, Bootstrap. Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, among others.",
+        "description_en" => "Java desktop and web development with Java, Play Framework, Oracle, HTML5, CSS3, Bootstrap. Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, among others.",
+        "description_es" => "Desarrollo de escritorio y web con Java, Play Framework, Oracle, HTML5, CSS3, Bootstrap. Booking Engine, Marketing Automation, CRM, CMS, Channel Manager, Business Intelligence, API Integration, entre otros.",
         "technologies" => [
             "Java",
             "Play Framework",
@@ -200,12 +210,14 @@ $works = [
         ],
     ],
     [
-        "title" => "Php Developer / Technical Support",
+        "title_en" => "Php Developer / Technical Support",
+        "title_es" => "Desarrollador Php / Soporte Técnico",
         "company" => "Freelance",
         "company_url" => "https://linkedin.com/in/lgzarturo",
         "location" => "Cancún, Quintana Roo",
         "date" => "2005 - 2009",
-        "description" => "Web design and development for clients. Technical support for computer equipment, installation of operating systems, and software",
+        "description_en" => "Web design and development for clients. Technical support for computer equipment, installation of operating systems, and software",
+        "description_es" => "Diseño y desarrollo web para clientes. Soporte técnico para equipos de cómputo, instalación de sistemas operativos y software",
         "technologies" => [
             "Windows",
             "Linux",
@@ -217,12 +229,14 @@ $works = [
 
 $education = [
     [
-        "title" => "Bachelor of Computer Systems Engineering",
+        "title_en" => "Bachelor of Computer Systems Engineering",
+        "title_es" => "Ingeniería en Sistemas Computacionales",
         "school" => "ITCancún",
         "school_url" => "https://www.google.com",
         "location" => "Cancún, Quintana Roo",
         "date" => "2000 - 2005",
-        "description" => "Web Project Development. Participating in the creation of a customer service portal, reservation management, using Java technologies and programming methodologies."
+        "description_en" => "Web Project Development. Participating in the creation of a customer service portal, reservation management, using Java technologies and programming methodologies.",
+        "description_es" => "Desarrollo de Proyecto Web. Participando en la creación de un portal de atención al cliente, gestión de reservas, utilizando tecnologías Java y metodologías de programación.",
     ]
 ];
 
@@ -272,26 +286,32 @@ $skills = [
 $soft_skills = [
     [
         "icon" => "tabler-icon-clipboard-list.svg",
-        "title" => "Teamwork",
+        "title_en" => "Teamwork",
+        "title_es" => "Trabajo en equipo",
     ],
     [
         "icon" => "tabler-icon-clipboard-list.svg",
-        "title" => "Leadership",
+        "title_en" => "Leadership",
+        "title_es" => "Liderazgo",
     ],
     [
         "icon" => "tabler-icon-clipboard-list.svg",
-        "title" => "Communication",
+        "title_en" => "Communication",
+        "title_es" => "Comunicación",
     ],
     [
         "icon" => "tabler-icon-clipboard-list.svg",
-        "title" => "Problem solving",
+        "title_en" => "Problem solving",
+        "title_es" => "Resolución de problemas",
     ],
     [
         "icon" => "tabler-icon-clipboard-list.svg",
-        "title" => "Creativity",
+        "title_en" => "Creativity",
+        "title_es" => "Creatividad",
     ],
     [
         "icon" => "tabler-icon-clipboard-list.svg",
-        "title" => "Adaptability",
+        "title_en" => "Adaptability",
+        "title_es" => "Adaptabilidad",
     ]
 ];
