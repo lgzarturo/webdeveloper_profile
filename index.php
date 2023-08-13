@@ -1,17 +1,20 @@
 <?php require_once 'config.php'; ?>
-<?php $_SESSION['page'] = 'index'; ?>
+<?php
+$_SESSION['page'] = 'index';
+$csrf_token = $_SESSION['csrf_token'] ?? '';
+?>
 <!DOCTYPE html>
 <html lang="en" class="scroll_page">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-<?php echo $random ?>' 'strict-dynamic'; object-src 'none'; base-uri 'none';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="I am professional web developer, I have experience with PHP, Javascript, Java, Python, among others.">
     <meta name="title" content="Arturo López - Professional Web Developer &amp; Portfolio Experience" />
     <title>Professional Web Developer &amp; Portfolio Experience</title>
     <?php include(__DIR__ . '/templates/snippets/_tag_open_graph.php') ?>
     <!-- Favicon -->
+    <meta name="theme-color" content="#0d47a1" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -33,7 +36,7 @@
     <?php } ?>
 </head>
 
-<body class="one_page">
+<body class="one_page" id="<?php echo $random ?>">
     <?php if ($is_production) { ?>
         <?php include(__DIR__ . '/templates/snippets/_tag_manager_body.php') ?>
     <?php } ?>
@@ -90,7 +93,7 @@
                     </svg>
                     Web Applications
                 </h4>
-                <img src="assets/img/web_applications_card.jpg" class="responsive" alt="Build and Develop Web Applications" loading="lazy">
+                <img src="assets/img/web_applications_card.jpg" class="responsive" alt="Build and Develop Web Applications" loading="lazy" width="1024" height="768">
                 <p>
                     I develop web applications with the latest technologies,
                     I have experience in the development of web applications
@@ -113,7 +116,7 @@
                     </svg>
                     Mobile Applications
                 </h4>
-                <img src="assets/img/mobile_applications_card.jpg" class="responsive" alt="Design and Responsive Thinking in Mobile First" loading="lazy">
+                <img src="assets/img/mobile_applications_card.jpg" class="responsive" alt="Design and Responsive Thinking in Mobile First" loading="lazy" width="1024" height="768">
                 <p>
                     I develop mobile applications with the latest technologies,
                     I have experience in the development of mobile applications
@@ -135,7 +138,7 @@
                     </svg>
                     E-commerce
                 </h4>
-                <img src="assets/img/ecommerce_card.jpg" class="responsive" alt="Payment methods, Customer Strategy of E-Commerce" loading="lazy">
+                <img src="assets/img/ecommerce_card.jpg" class="responsive" alt="Payment methods, Customer Strategy of E-Commerce" loading="lazy" width="1024" height="768">
                 <p>
                     I develop e-commerce with the latest technologies,
                     I have experience in the development of email marketing campaigns with
@@ -158,8 +161,17 @@
 
     <?php include(__DIR__ . '/templates/section/_footer.php') ?>
 
-    <script nonce="<?php echo $random ?>" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script nonce="<?php echo $random ?>" src="assets/js/main.min.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.min.js" type="application/javascript"></script>
+    <!--is production <?php var_dump($is_production) ?>-->
+    <script>
+        const is_production = '<?php echo $is_production ?>';
+        const token = '<?php echo $random ?>';
+        console.log({
+            is_production,
+            token
+        });
+    </script>
     <?php include(__DIR__ . '/templates/snippets/_form_microformats.php') ?>
 </body>
 

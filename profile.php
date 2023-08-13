@@ -186,13 +186,13 @@ $soft_skills = [
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-<?php echo $random ?>' 'strict-dynamic'; object-src 'none'; base-uri 'none';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="My name is Arturo López, I am a full-stack developer with experience in the travel, consulting, recruiting, and human resources industries.">
     <meta name="title" content="Arturo López - Web Developer | Professional Profile" />
     <title>Arturo López | Web Developer | Professional Profile</title>
     <?php include(__DIR__ . '/templates/snippets/_tag_open_graph.php') ?>
     <!-- Favicon -->
+    <meta name="theme-color" content="#0d47a1" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -208,7 +208,7 @@ $soft_skills = [
     <?php include(__DIR__ . '/templates/snippets/_tag_manager_head.php') ?>
 </head>
 
-<body>
+<body id="<?php echo $random ?>">
     <?php include(__DIR__ . '/templates/snippets/_tag_manager_body.php') ?>
 
     <?php include(__DIR__ . '/templates/section/_navigation.php') ?>
@@ -331,8 +331,8 @@ $soft_skills = [
 
     <?php include(__DIR__ . '/templates/section/_footer.php') ?>
 
-    <script nonce="<?php echo $random ?>" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script nonce="<?php echo $random ?>" src="assets/js/main.min.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.min.js" type="application/javascript"></script>
     <?php include(__DIR__ . '/templates/snippets/_form_microformats.php') ?>
 </body>
 
