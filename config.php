@@ -11,4 +11,4 @@ try {
     die();
 }
 
-$is_production = false;
+$is_production = true;
