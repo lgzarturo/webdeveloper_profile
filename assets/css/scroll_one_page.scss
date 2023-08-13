@@ -1,0 +1,12 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.one_page,
+.section_about__title,
+.section_services__title,
+.section_contact__title,
+.footer {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}

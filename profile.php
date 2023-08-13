@@ -1,11 +1,7 @@
+<?php require_once 'config.php'; ?>
 <?php
-session_start();
 $_SESSION['page'] = 'profile';
-$random = 0;
-try {
-    $random = substr(hash('sha256', openssl_random_pseudo_bytes(20)),-random_int(1, 100));
-} catch (Exception $e) {
-}
+
 $works = [
     [
         "title" => "Java Software Engineer",
@@ -190,23 +186,25 @@ $soft_skills = [
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-<?php echo $random ?>' 'strict-dynamic' 'unsafe-inline' https:; object-src 'none'; base-uri 'none';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-<?php echo $random ?>' 'strict-dynamic'; object-src 'none'; base-uri 'none';">
     <meta name="description" content="My name is Arturo López, I am a full-stack developer with experience in the travel, consulting, recruiting, and human resources industries.">
     <meta name="title" content="Arturo López - Web Developer | Professional Profile" />
     <title>Arturo López | Web Developer | Professional Profile</title>
     <?php include(__DIR__ . '/templates/snippets/_tag_open_graph.php') ?>
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/img/favicon/site.webmanifest">
     <!-- Preload -->
-    <link rel="preload" href="assets/css/normalize.css" as="style">
-    <link rel="preload" href="assets/css/style.css" as="style">
-
+    <link rel="preload" href="assets/css/normalize.min.css" as="style">
+    <link rel="preload" href="assets/css/style.min.css" as="style">
+    <link rel="preload" href="assets/img/hero.jpg" as="image" />
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Metrics -->
     <?php include(__DIR__ . '/templates/snippets/_tag_manager_head.php') ?>
 </head>
 
@@ -217,7 +215,7 @@ $soft_skills = [
 
     <div class="background_section">
         <div class="overlay"></div>
-        <section id="about" class="container rounded card card_column py_5">
+        <section class="container rounded card card_column py_5">
             <h2 class="mt_0">
                 Hello world! Welcome to my professional profile.
             </h2>
@@ -234,7 +232,7 @@ $soft_skills = [
         </section>
     </div>
 
-    <main id="services" class="container py_5">
+    <main class="container py_5">
         <div class="row">
             <div class="col-8">
                 <section>
@@ -307,12 +305,12 @@ $soft_skills = [
                 <section class="rounded card card_column card_section mb_3">
                     <h4 class="rounded_top card_title card_title_secondary">Tech skills</h4>
                     <ul class="list_items">
-                    <?php foreach ($skills as $skill) { ?>
-                        <li>
-                            <img src="assets/img/icons/<?php echo $skill['icon'] ?>" alt="<?php echo $skill['title'] ?>" class="icon">
-                            <?php echo $skill['title'] ?>
-                        </li>
-                    <?php } ?>
+                        <?php foreach ($skills as $skill) { ?>
+                            <li>
+                                <img src="assets/img/icons/<?php echo $skill['icon'] ?>" alt="<?php echo $skill['title'] ?>" class="icon">
+                                <?php echo $skill['title'] ?>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </section>
 
@@ -322,7 +320,8 @@ $soft_skills = [
                         <?php foreach ($soft_skills as $skill) { ?>
                             <li>
                                 <img src="assets/img/icons/<?php echo $skill['icon'] ?>" alt="<?php echo $skill['title'] ?>" class="icon">
-                                <?php echo $skill['title'] ?></li>
+                                <?php echo $skill['title'] ?>
+                            </li>
                         <?php } ?>
                     </ul>
                 </section>

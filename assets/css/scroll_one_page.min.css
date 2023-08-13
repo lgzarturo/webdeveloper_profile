@@ -1,0 +1,2 @@
+html{-ms-scroll-snap-type:y mandatory;scroll-snap-type:y mandatory}.footer,.one_page,.section_about__title,.section_contact__title,.section_services__title{scroll-snap-align:start;scroll-snap-stop:always}
+/*# sourceMappingURL=scroll_one_page.min.css.map */
