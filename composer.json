@@ -1,0 +1,21 @@
+{
+    "name": "webdeveloper/profile",
+    "description": "Professional web developer profile portfolio",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Webdeveloper\\Profile\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arturo López",
+            "email": "lgzarturo@gmail.com"
+        }
+    ]
+}

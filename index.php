@@ -98,7 +98,7 @@ $csrf_token = $_SESSION['csrf_token'] ?? '';
                 <p class="section_services__item--webapp__text--2">
                     <?php echo $translations['section_services__item--webapp__text--2'] ?>
                 </p>
-                <a href="#" class="section_services__item--webapp__btn btn btn_secondary btn_flat_top text_center w_100 coming_soon">
+                <a href="webapp.php" class="section_services__item--webapp__btn btn btn_secondary btn_flat_top text_center w_100 coming_soon">
                     <?php echo $translations['section_services__item--webapp__btn'] ?>
                 </a>
             </section>
@@ -156,6 +156,64 @@ $csrf_token = $_SESSION['csrf_token'] ?? '';
             is_production,
             token,
             lang
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const form = $('#contact_form');
+            const loader = form.find('#contact_form__button--loader');
+            const icon = form.find('#contact_form__button--icon');
+            const response = $('#contact__response');
+            response.html('');
+            response.hide();
+            loader.hide();
+            icon.show();
+
+            form.on('submit', function(e) {
+                e.preventDefault();
+                console.log('submit');
+                response.html('');
+                loader.show();
+                icon.hide();
+                const helpers = $('.contact_form__field__helper');
+                helpers.each(function() {
+                    $(this).html('');
+                });
+
+                $.ajax({
+                    url: '/src/send_message.php',
+                    type: 'POST',
+                    data: form.serialize(),
+                    dataType: 'json',
+                    success: function(data) {
+                        console.log(data);
+                        let response_html = data.message;
+                        if (data.success === true) {
+                            response.removeClass('section_contact__message--error');
+                            response.addClass('section_contact__message--success');
+                            form.trigger('reset');
+                        } else {
+                            response.removeClass('section_contact__message--success');
+                            response.addClass('section_contact__message--error');
+                            if (data.errors) {
+                                for (const error in data.errors) {
+                                    const helper = form.find(`.contact_form__field--${error}__error`);
+                                    helper.html(data.errors[error]);
+                                }
+                            }
+                        }
+                        response.show();
+                        response.html(response_html);
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    },
+                    complete: function() {
+                        loader.hide();
+                        icon.show();
+                    }
+                });
+            });
         });
     </script>
     <?php include(__DIR__ . '/templates/snippets/_form_microformats.php') ?>

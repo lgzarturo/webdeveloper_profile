@@ -1,3 +1,7 @@
+<?php
+$success = $_GET['success'] ?? '';
+$error = $_GET['error'] ?? '';
+?>
 <section id="contact" class="section_contact container pb_5">
     <h3 class="section_contact__title bb mb_4">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -49,6 +53,5 @@
     <p class="section_contact__description--help">
         <?php echo $translations['section_contact__description--help'] ?>
     </p>
-
     <?php include_once(__DIR__ . '/../snippets/_form_contact.php') ?>
 </section>
