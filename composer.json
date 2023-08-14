@@ -3,6 +3,7 @@
     "description": "Professional web developer profile portfolio",
     "type": "project",
     "require": {
+        "php": ">=8.2",
         "phpmailer/phpmailer": "^6.8",
         "vlucas/phpdotenv": "^5.5"
     },

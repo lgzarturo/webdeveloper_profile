@@ -12,8 +12,12 @@ header('Content-Type: application/json; charset=utf-8');
 
 session_start();
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
-$dotenv->load();
+$is_production = $_ENV['IS_PRODUCTION'] ?? false;
+
+if (!$is_production) {
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+    $dotenv->load();
+}
 
 $csrf_token = $_POST['csrf_token'] ?? null;
 $subject = $_POST['subject'] ?? null;
