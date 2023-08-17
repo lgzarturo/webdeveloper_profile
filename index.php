@@ -22,14 +22,12 @@ $csrf_token = $_SESSION['csrf_token'] ?? '';
     <!-- Preload -->
     <link rel="preload" href="assets/css/normalize.min.css" as="style">
     <link rel="preload" href="assets/css/style.min.css" as="style">
-    <link rel="preload" href="assets/css/scroll_one_page.min.css" as="style">
     <link rel="preload" href="assets/img/web_applications_card.jpg" as="image" />
     <link rel="preload" href="assets/img/mobile_applications_card.jpg" as="image" />
     <link rel="preload" href="assets/img/ecommerce_card.jpg" as="image" />
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/normalize.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="assets/css/scroll_one_page.min.css">
     <!-- Metrics -->
     <?php if ($is_production) { ?>
         <?php include(__DIR__ . '/templates/snippets/_tag_manager_head.php') ?>
