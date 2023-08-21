@@ -4,15 +4,17 @@ declare(strict_types=1);
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-use Profile\Helpers;
+use Profile\{Helpers, Config};
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
+$config = Config::init();
 
 header('Content-Type: application/json; charset=utf-8');
 
 session_start();
 
-$is_production = $_ENV['IS_PRODUCTION'] ?? false;
+$is_production = $config->getIsProduction();
 
 if (!$is_production) {
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');

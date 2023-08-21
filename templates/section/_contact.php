@@ -1,4 +1,10 @@
 <?php
+
+require_once(__DIR__ . '/../../vendor/autoload.php');
+
+use Profile\Config;
+
+Config::init();
 $success = $_GET['success'] ?? '';
 $error = $_GET['error'] ?? '';
 ?>

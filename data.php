@@ -1,5 +1,9 @@
 <?php
 
+use Profile\Config;
+
+Config::init();
+
 $data_translations = [
     "en" => [
         "page__profession" => "Web Developer",

@@ -1,3 +1,11 @@
+<?php
+
+require_once(__DIR__ . '/../../vendor/autoload.php');
+
+use Profile\Config;
+
+Config::init();
+?>
 <form id="contact_form" action="/src/send_message.php" method="POST">
     <input type="hidden" name="subject" value="<?php echo $translations['contact_form__field--subject__value'] ?>">
     <input type="hidden" name="language" value="<?php echo $lang ?>">

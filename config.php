@@ -6,19 +6,15 @@ require_once('vendor/autoload.php');
 
 session_start();
 
-use Profile\Helpers;
+use Profile\{Helpers, Config};
 
-$is_production = $_ENV['IS_PRODUCTION'] ?? false;
+$config = Config::init();
 
-$lang = $_ENV['LANGUAGE'] ?? 'es';
+$is_production = $config->getIsProduction();
 
-$param_lang = $_GET['lang'] ?? null;
+$lang = $config->getLang();
 
-error_reporting($is_production ? 0 : E_ALL);
-
-ini_set('display_startup_errors', $is_production ? 'Off' : 'On');
-
-ini_set('display_errors', $is_production ? 'Off' : 'On');
+$param_lang = $config->getLangParam();
 
 $random = 0;
 

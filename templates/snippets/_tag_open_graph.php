@@ -1,3 +1,11 @@
+<?php
+
+require_once(__DIR__ . '/../../vendor/autoload.php');
+
+use Profile\Config;
+
+Config::init();
+?>
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://lgzarturo.com/" />

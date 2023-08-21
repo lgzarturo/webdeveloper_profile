@@ -1,4 +1,10 @@
 <?php
+
+require_once(__DIR__ . '/../../vendor/autoload.php');
+
+use Profile\Config;
+
+Config::init();
 $page = $_SESSION['page'];
 ?>
 <header class="text_center">

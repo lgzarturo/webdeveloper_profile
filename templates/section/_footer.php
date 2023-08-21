@@ -1,3 +1,11 @@
+<?php
+
+require_once(__DIR__ . '/../../vendor/autoload.php');
+
+use Profile\Config;
+
+Config::init();
+?>
 <footer class="footer container bt my_1 mt_2 text_center">
     <p class="footer__owner">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
