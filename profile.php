@@ -117,6 +117,13 @@ $_SESSION['page'] = 'profile';
                         </div>
                     <?php } ?>
                 </section>
+                <section class="alert alert--cta contact_section">
+                    <h3><?php echo $translations['section_profile_contact_cta__title'] ?></h3>
+                    <p><?php echo $translations['section_profile_contact_cta__description'] ?></p>
+                    <a href="<?php if ($page !== 'index') {
+                                    echo  '/';
+                                } ?>#contact" class="btn btn_primary"><?php echo $translations['section_profile_contact_cta__link'] ?></a>
+                </section>
             </div>
             <div class="col-4">
                 <section class="section_skills rounded card card_column card_section mb_3">

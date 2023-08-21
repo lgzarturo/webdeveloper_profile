@@ -15,25 +15,35 @@ $page = $_SESSION['page'];
 
 <div class="nav_bg">
     <nav class="nav_primary container">
-        <a href="/" class="nav_item__home py_1 px_2<?php if ($page === 'index') { echo  ' active'; } ?>">
+        <a href="/" class="nav_item nav_item__home py_1 px_2<?php if ($page === 'index') {
+                                                                echo  ' active';
+                                                            } ?>">
             <?php echo $translations['nav_item__home'] ?>
         </a>
-        <a href="<?php if ($page !== 'index') { echo  '/'; } ?>#about" class="nav_item__about py_1 px_2">
+        <a href="<?php if ($page !== 'index') {
+                        echo  '/';
+                    } ?>#about" class="nav_item nav_item__about py_1 px_2">
             <?php echo $translations['nav_item__about'] ?>
         </a>
-        <a href="<?php if ($page !== 'index') { echo  '/'; } ?>#services" class="nav_item__services py_1 px_2">
+        <a href="<?php if ($page !== 'index') {
+                        echo  '/';
+                    } ?>#services" class="nav_item nav_item__services py_1 px_2">
             <?php echo $translations['nav_item__services'] ?>
         </a>
-        <a href="<?php if ($page !== 'index') { echo  '/'; } ?>#contact" class="nav_item__contact py_1 px_2">
+        <a href="<?php if ($page !== 'index') {
+                        echo  '/';
+                    } ?>#contact" class="nav_item nav_item__contact py_1 px_2">
             <?php echo $translations['nav_item__contact'] ?>
         </a>
-        <a href="profile.php" class="nav_item__profile py_1 px_2<?php if ($page === 'profile') { echo  ' active'; } ?>">
+        <a href="profile.php" class="nav_item nav_item__profile py_1 px_2<?php if ($page === 'profile') {
+                                                                                echo  ' active';
+                                                                            } ?>">
             <?php echo $translations['nav_item__profile'] ?>
         </a>
-        <a href="?lang=es" class="nav_item__es py_1 px_2">
+        <a href="?lang=es" class="nav_item nav_item__es py_1 px_2">
             Español
         </a>
-        <a href="?lang=en" class="nav_item__en py_1 px_2">
+        <a href="?lang=en" class="nav_item nav_item__en py_1 px_2">
             English
         </a>
     </nav>

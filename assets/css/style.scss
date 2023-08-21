@@ -635,6 +635,53 @@ fieldset legend {
     }
 }
 
+.alert {
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &.alert--cta {
+        background-color: rgba(30, 136, 229, 0.4);
+        color: var(--primary-dark);
+    }
+    &.alert--success {
+        background-color: var(--success-light);
+        color: var(--success-dark);
+    }
+    &.alert--error {
+        background-color: var(--danger-light);
+        color: var(--danger-dark);
+    }
+    &.alert--warning {
+        background-color: var(--warning-light);
+        color: var(--warning-dark);
+    }
+    &.alert--info {
+        background-color: var(--info-light);
+        color: var(--info-dark);
+    }
+    h3, p {
+        margin: 0;
+        padding: 0;
+    }
+    h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    a {
+        padding: 1.3rem 10rem;
+        font-size: 2rem;
+    }
+}
+
 /*
     Icons
     ========================================================================== */

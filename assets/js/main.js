@@ -8,7 +8,7 @@ $(document).ready(function() {
       $(this).removeClass('active');
     });
   }
-  $(`a[href="${hash}"]`).addClass('active');
+  $(`.nav_item[href="${hash}"]`).addClass('active');
   $('.coming_soon').click(function(e) {
     e.preventDefault();
     alert('This section is coming soon');
