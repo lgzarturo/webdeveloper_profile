@@ -12,7 +12,7 @@ class Config
 
     private function __construct()
     {
-        $this->is_production = $_ENV['IS_PRODUCTION'] ?? false;
+        $this->is_production = filter_var($_ENV['IS_PRODUCTION'], FILTER_VALIDATE_BOOLEAN) ?? false;
 
         $this->lang = $_ENV['LANGUAGE'] ?? 'es';
 
