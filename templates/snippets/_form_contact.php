@@ -1,4 +1,4 @@
-<form id="contact_form" action="/src/send_message.php" method="POST" novalidate>
+<form id="contact_form" action="/src/send_message.php" method="POST">
     <input type="hidden" name="subject" value="<?php echo $translations['contact_form__field--subject__value'] ?>">
     <input type="hidden" name="language" value="<?php echo $lang ?>">
     <input type="hidden" name="csrf_token" value="<?php echo $csrf_token ?>">

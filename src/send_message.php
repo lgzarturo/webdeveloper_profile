@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-require_once __DIR__ . '/Helpers.php';
+use Profile\Helpers;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -57,7 +57,7 @@ $message_translations = [
     ]
 ];
 
-$message = $message_translations[Helpers\Helpers::sanitize_lang($language)];
+$message = $message_translations[Helpers::sanitize_lang($language)];
 $errors = [
     "name" => '',
     "phone" => '',
@@ -154,29 +154,52 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 $to = 'lgzarturo@gmail.com';
 
-$html_content = "
+$html_content = '
 <html>
     <head>
-        <title>$subject - $email</title>
+        <title>{{ subject }} - {{ email }}</title>
     </head>
-    <body>
-        <p>$subject</p>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Email</th>
-            </tr>
-            <tr>
-                <td>$name</td>
-                <td>$phone</td>
-                <td>$email</td>
-            </tr>
-        </table>
-        <p>$body</p>
+    <body style="padding: 20px; font-size: 16px; font-family: Arial, sans-serif;">
+        <h1 style="border-bottom: 1px solid #ccc; margin-bottom: 20px;">
+            Subject: <span style="font-weight: 400;">{{ subject }}</span>
+        </h1>
+        <br>
+        <ul style="margin-bottom: 30px; list-style: none; padding: 0;">
+            <li><strong>Name</strong>: {{ name }}</li>
+            <li><strong>Phone</strong>: {{ phone }}</li>
+            <li><strong>Email</strong>: {{ email }}</li>
+        </ul>
+        <br>
+        <h2 style="border-bottom: 1px solid #ccc; margin-bottom: 20px;">Message</h2>
+        <p style="margin: 30px 0; font-size: 125%;">{{ body }}</p>
+        <br>
+        <p style="font-size: 80%; color: #ccc; padding: 20px 0; margin-top: 20px; border-top: 1px solid #ccc;">
+            Message sent on <strong>{{ date }}</strong>
+        </p>
     </body>
 </html>
-";
+';
+
+// Replace placeholders with actual values
+$html_content = str_replace(
+    array(
+        '{{ subject }}',
+        '{{ name }}',
+        '{{ phone }}',
+        '{{ email }}',
+        '{{ body }}',
+        '{{ date }}'
+    ),
+    array(
+        $subject,
+        $name,
+        $phone,
+        $email,
+        $body,
+        date("Y-m-d H:i:s")
+    ),
+    $html_content
+);
 
 // Always set content-type when sending HTML email
 $headers = "MIME-Version: 1.0" . PHP_EOL;
